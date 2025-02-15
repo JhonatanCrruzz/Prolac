@@ -1,0 +1,298 @@
+/* =======================================
+    Color de Variables
+   ======================================= */
+:root {
+    --color-background: #EBEDEE;
+    --color-white: #FFFFFF;
+    --color-black: #141414;
+    --color-gray-light: #828282;
+    --color-shadow: rgba(0, 0, 0, 0.746);
+    --color-hover-options: #F7F7F7;
+    --color-gray-balck: rgba(33, 35, 34, 0);
+}
+/* =======================================
+    Estilos del Globales
+   ======================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* =======================================
+    Estilos del Body
+   ======================================= */
+body {
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    overflow: auto;
+    font-size: 16px;
+    display: flex;
+}
+
+
+
+/* =======================================
+    Section Left
+   ======================================= */
+
+.left {
+    width: 20%;
+ /* Asegura que los elementos absolutos se posicionen respecto a este */
+}
+
+/*__________ top-bar _________*/
+
+.left__top{
+    background-color: #5478A0;
+    padding: .5rem 0rem .5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-search {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: auto;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+.search {
+    width: 100%;
+    color: #000;
+    border-radius: 20px;
+    padding-right: 1rem;
+}
+
+.search input {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin: auto;
+    outline: none;
+    border: none;
+    color: #000;
+
+}
+.search input::placeholder{
+    color: #000;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.information-user__img {
+    width: 150px; /* Ajusta el tamaño del div según necesites */
+    height: 150px;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    border-radius: 50%; /* Si deseas que sea circular */
+    margin-bottom: 1rem;
+}
+.information-user__img img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del div */
+    height: 100%; /* Mantiene la imagen dentro del div */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+}
+.information-user{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+    padding-right: .5rem;
+}
+.information-user a{
+    color: #F7F7F7;
+
+}
+.user-name,
+.user-email,
+.user-cargo {
+    margin-bottom: .2rem;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+.user-data {
+    color: #F7F7F7;
+}
+
+
+
+/*__________ category _________*/
+.menu-notresponsive {
+    background-color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.category li {
+    margin-bottom: 1rem;
+    font-family: "Oswald";
+    list-style: none;
+    position: relative; /* Para que los submenús se posicionen respecto a su elemento padre */
+}
+.category a {
+    text-decoration: none;
+    color: #141414;
+}
+
+
+/*__________  Categories _________*/
+.category__collaborators,
+.category__products,
+.category__billing,
+.category__historical {
+    display: block;
+    width: 100px;
+    text-align: center;
+
+}
+/*__________ _________*/
+.menu_collaborators,
+.menu_products,
+.menu_billing,
+.menu_historical {
+    display: block;
+    width: 110px;
+}
+
+/* Submenús ocultos por defecto */
+.menu_collaborators,
+.menu_products,
+.menu_billing,
+.menu_historical {
+    display: none;
+    position: absolute;
+    left: 100%; /* Los submenús se abren a la derecha */
+    top: 0;
+    z-index: 1000;
+    width: 200px;
+    padding-left: 1rem;
+}
+.menu_collaborators-customer_submenu,
+.menu_collaborators-producers_submenu,
+.menu_collaborators-conveyors_submenu,
+.menu_collaborators-suppliers_submenu,
+.menu_collaborators-employees_submenu {
+    display: none;
+    position: absolute;
+    left: 100%; /* Los submenús se abren a la derecha */
+    top: 0;
+    z-index: 1000;
+    width: 100px;
+    padding-left: 1rem;
+}
+
+/*.collaborators,
+.products,
+.billing,
+.historical,
+.menu_collaborators-customer,
+.menu_collaborators-producers,
+.menu_collaborators-conveyors,
+.menu_collaborators-suppliers,
+.menu_collaborators-employees {
+    display: inline-block;
+    width: 100px;
+
+}
+.menu_collaborators-customer_submenu_lst-customer,
+.menu_collaborators-customer_submenu_add-customer {
+
+    display: inline-block;
+    width: 110px;
+}*/
+.category__collaborators:hover,
+.category__products:hover,
+.category__billing:hover,
+.category__historical:hover,
+.menu_collaborators-customer:hover,
+.menu_collaborators-producers:hover,
+.menu_collaborators-conveyors:hover,
+.menu_collaborators-suppliers:hover,
+.menu_collaborators-employees:hover,
+.menu_collaborators-customer_submenu_lst-customer:hover,
+.menu_collaborators-customer_submenu_add-customer:hover,
+.menu_collaborators-producers_submenu_lst-producers:hover,
+.menu_collaborators-producers_submenu_add-producers:hover,
+.menu_collaborators-conveyors_submenu_lst-conveyors:hover,
+.menu_collaborators-conveyors_submenu_add-conveyors:hover,
+.menu_collaborators-suppliers_submenu_lst-suppliers:hover,
+.menu_collaborators-suppliers_submenu_add-suppliers:hover,
+.menu_collaborators-employees_submenu_lst-employees:hover,
+.menu_collaborators-employees_submenu_add-employees:hover {
+    border-radius: 7px;
+    padding: .2rem;
+    border: 2px solid black;
+}
+/* Espaciado de los submenús 
+.menu_collaborators,
+.menu_products,
+.menu_billing,
+.menu_historical {
+    margin-left: 0;
+
+}*/
+
+/* Sub-submenús también aparecen al lado */
+.menu_collaborators-customer_submenu,
+.menu_collaborators-producers_submenu,
+.menu_collaborators-conveyors_submenu,
+.menu_collaborators-suppliers_submenu,
+.menu_collaborators-employees_submenu {
+    left: 100%; /* Hace que el submenú se expanda a la derecha */
+    top: 0;
+}
+
+
+
+/* Mostrar submenús al hacer hover */
+.category__collaborators:hover > .menu_collaborators,
+.category__products:hover > .menu_products,
+.category__billing:hover > .menu_billing,
+.category__historical:hover > .menu_historical {
+    display: block;
+}
+
+.menu_collaborators-customer:hover > .menu_collaborators-customer_submenu,
+.menu_collaborators-producers:hover > .menu_collaborators-producers_submenu,
+.menu_collaborators-conveyors:hover > .menu_collaborators-conveyors_submenu,
+.menu_collaborators-suppliers:hover > .menu_collaborators-suppliers_submenu,
+.menu_collaborators-employees:hover > .menu_collaborators-employees_submenu {
+    display: block;
+    width: 160px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =======================================
+    Section Right
+   ======================================= */
+
+.right {
+    width: 70%;
+
+}
+/*__________ top-bar _________*/
+.top-bar{
+    width: 100%;
+    height: 32px;
+    background-color: #1B263B;
+    padding-left: .3rem;
+}
+.top-bar i{
+    color: #FFFFFF;
+}
+
+
+
+
+

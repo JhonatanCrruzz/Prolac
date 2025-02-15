@@ -1,0 +1,210 @@
+
+/* Color Variables */
+:root {
+    --color-background: #EBEDEE;
+    --color-white: #FFFFFF;
+    --color-black: #141414;
+    --color-gray-light: #828282;
+    --color-shadow: rgba(0, 0, 0, 0.746);
+    --color-hover-options : #F7F7F7;
+}
+
+/* Stilos Globales */
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+}
+
+/* Section Body */
+body{
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Top */
+.register_top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* Subsection Top-Left */
+    .register_top_left{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-right: 3rem;
+    }
+    .register_top_left img{
+        width: 2rem;
+    }
+    .register_top_left span{
+        font-family:"Poppins";
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+/* Subsection Top-Right */
+    .register_top_right{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    .register_top_right p{
+        font-family:"Poppins";
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .register_top_right a{
+        color: var(--color-black);
+        font-family:"Poppins";
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .register_top_right a:hover{
+        color: rgb(100, 100, 100)
+    }
+
+    /* Section_Register */
+.register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Subsection Register-Container */
+    .register_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .register_container_message-welcome{
+        font-family: "Roboto";
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+        word-wrap: break-word; /* Permite el salto de línea si es necesario */
+        word-break: break-word; /* Asegura que las palabras largas se corten */
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    .register_container_description{
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+/* Section Form */
+.register_container_form,
+.register_container_form_data{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 18rem;
+    position: relative;
+    margin: auto;
+    max-width: 300px;
+}
+.register_container_form_data input{
+    border: 2px solid var(--color-gray-light);
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 2.4rem;
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    max-width: 18rem;
+    margin: auto;
+    transition: border-color 0.3s ease;
+}
+.register_container_form button{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 2.5rem;
+    width:90%;
+    margin: auto;
+    font-family: "Roboto";
+}
+
+/* Subsection Input group*/
+    .register_container_form_data_input_group {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .register_container_form_data_input_group input {
+        width: 100%;
+        padding: 1rem 0.5rem 0.2rem;
+        border: 2px solid var(--color-gray-light);
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+    .register_container_form_data_input_group label{
+        font-family: "Roboto";
+        font-weight: 500;
+    }
+    .register_container_form_data_input_group input:focus {
+        border-color: var(--color-black);
+    }
+    /* Estilo inicial del label */
+    .floating-label {
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        font-size: 1rem;
+        color: var(--color-gray-light);
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    /* Movimiento del label cuando el input está enfocado o tiene texto */
+    .register_container_form_data_input_group input:focus + .floating-label,
+    .register_container_form_data_input_group input:not(:placeholder-shown) + .floating-label {
+        top: -0.5rem;
+        left: 0.3rem;
+        font-size: 1rem;
+        color: var(--color-black);
+    }
+
+
+/* Section footer*/
+.footer_content_register{
+    color: var(--color-black);
+    font-family: "Oswald";
+    font-size: 0.9rem;
+    width: 18rem;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+.footer_content_register a{
+    color: var(--color-black);
+    font-family: "Oswald";
+    font-size: 0.9rem;
+    width: 18rem;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    margin-top: 1rem;
+}
